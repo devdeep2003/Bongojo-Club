@@ -1,0 +1,318 @@
+ /*Global Style*/
+ 
+ :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  color: rgba(255, 255, 255, 0.87);
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+   background-color: black; 
+  
+}
+
+.text_center{
+  text-align: center;
+}
+
+
+/* Navbar.css */
+
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97.5%;
+    z-index: 1; /* Adjust the z-index as needed */
+
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the width of your logo as needed */
+    display:inline;
+  }
+
+  .logo-container:hover{
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px; /* Adjust the spacing between links as needed */
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition effect */
+    padding: 10px 15px; /* Adjust padding as needed */
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(169, 169, 169, 0.3); /* Faded light grey background color */
+    border-radius: 10px; /* Adjust the border-radius to create rounded corners */
+  }
+
+
+
+/*Decript.jsx*/
+
+.descript-section-container{
+  
+  display: flex; 
+  align-items: center;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 130px auto; /* Center the container horizontally and add some margin */
+}
+
+.section-container {
+  
+  display: flex; 
+  align-items: center;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 50px auto; /* Center the container horizontally and add some margin */
+}
+
+.image-container {
+  
+  flex: 1;
+  margin-right: 20px;
+}
+
+.rotating-image {
+  width: 100%;
+  height: auto;
+  animation: rotate 50s linear infinite; /* Rotation animation */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 0 80px rgba(255, 255, 255, 0.5); /* Circular shadow effect */
+}
+
+.glass-container {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background for the glass effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  border-radius: 10px; /* Adjust the border-radius as needed */
+  padding: 10px;
+  color: #fff; /* Text color */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Faculty.jsx*/
+
+
+.glass-section-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 50px auto; /* Center the container horizontally and add some margin */
+}
+
+.glass-container {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background for the glass effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  border-radius: 10px; /* Adjust the border-radius as needed */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  color: #fff; /* Text color */
+}
+
+.circular-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  padding: 20px;
+}
+
+.circular-image {
+  width: 100%; /* Adjust the width of your circular image as needed */
+  height: auto; /* Adjust the height of your circular image as needed */
+  border-radius: 50%; /* Make the image circular */
+
+}
+
+
+
+/*President.jsx*/
+
+
+.president-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  padding: 20px;
+}
+
+
+
+.president-image{
+  width: 100%; /* Adjust the width of your circular image as needed */
+  height: auto; /* Adjust the height of your circular image as needed */
+  border-radius: 50%; /* Make the image circular */
+
+}
+
+
+/*Statcards.jsx*/
+
+
+.glassmorphic-cards-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px; /* Adjust the maximum width as needed */
+  margin: 50px auto; /* Center the container horizontally and add some margin */
+  flex-wrap: wrap; /* Allow cards to wrap onto the next line on smaller screens */
+}
+
+.glass-card {
+  flex: 1;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background for the glass effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  border-radius: 10px; /* Adjust the border-radius as needed */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  color: #fff; /* Text color */
+  text-align: center;
+}
+
+.admin-circular-image {
+  width: 100%; /* Adjust the width of your circular image as needed */
+  height: auto; /* Adjust the height of your circular image as needed */
+  border-radius: 2%; /* Make the image circular */
+
+}
+
+/*Footer*/
+
+
+.glassmorphic-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 97.5%; /* Adjust the maximum width as needed */
+  background: rgba(255, 255, 255, 0.1); /* Translucent white background for the glass effect */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  color: #fff; /* Text color */
+  text-align: center;
+  padding: 10px 20px;
+
+ position: sticky;
+
+  width: 97.5%;
+  z-index: 1; /* Adjust the z-index as needed */
+}
+
+.collaboration-details {
+  flex: 1;
+  text-align: left;
+}
+
+.slogan{
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.rights-reserved {
+  flex: 1;
+  text-align: right;
+}
+
+.social-handles a {
+  color: #fff;
+  padding: 10px;
+  
+}
+
+.social-handles a i {
+  font-size: 24px;
+
+}
+
+.newsletter {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+/*Events.jsx*/
+
+.lg-react-element{
+
+  column-count: 3;
+  column-gap: 20px;
+}
+
+img{
+  max-width: 100%;
+  display:block;
+  padding: 10px 0px;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+img:hover{
+  filter: opacity(.9);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.image{
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
